@@ -1,0 +1,48 @@
+{
+  "name": "calc-engine-angular22",
+  "version": "0.0.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "packageManager": "pnpm@11.8.0",
+  "overrides": {
+    "@angular/build": {
+      "@babel/core": "^7.29.6",
+      "piscina": "^5.1.5"
+    }
+  },
+  "dependencies": {
+    "@angular/common": "^22.0.2",
+    "@angular/compiler": "^22.0.2",
+    "@angular/core": "^22.0.2",
+    "@angular/forms": "^22.0.2",
+    "@angular/platform-browser": "^22.0.2",
+    "@angular/router": "^22.0.2",
+    "@jsep-plugin/arrow": "^1.0.6",
+    "jest": "^30.4.2",
+    "jsep": "^1.4.0",
+    "rxjs": "~7.8.2",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.0.3",
+    "@angular/cli": "^22.0.3",
+    "@angular/compiler-cli": "^22.0.2",
+    "@types/jasmine": "^6.0.0",
+    "@types/jest": "^30.0.0",
+    "jasmine-core": "^6.3.0",
+    "jsdom": "^29.1.1",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-jasmine": "^5.1.0",
+    "prettier": "^3.8.4",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.9"
+  }
+}

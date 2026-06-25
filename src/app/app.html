@@ -1,0 +1,24 @@
+<h2>DSL Calculation Engine</h2>
+
+<button (click)="reset()">Reset</button>
+<button (click)="recalcAndTrace()">Recalc</button>
+<br>
+
+<label for="rules-select">Rule Set:</label>
+
+<select name="rules" id="rules-select" [(ngModel)]="options.ruleSet" (change)="onRulesChange()">
+  <option value="">--Choose a Rule Set--</option>
+    <option value="mad1">mad1</option>
+  <option value="sequentialSteps1">sequentialSteps1</option>
+  <option value="sequentialSteps2">sequentialSteps2</option>
+  <option value="sequentialSteps3">sequentialSteps3</option>
+    <option value="sequentialSteps4">sequentialSteps4</option>
+</select> 
+<br>
+<button (click)="qty33()">D_0: qty = 33</button>
+<button (click)="qty55()">D_0: qty = 55</button>
+<button (click)="qty77()">D_1: qty = 77</button>
+
+<pre>{{xxx | json}}</pre>
+Rules:
+<pre>{{rules | json}}</pre>
